@@ -6,12 +6,6 @@ A full-stack MERN application for managing and discovering baking recipes. Baker
 
 ---
 
-## 📸 Screenshots
-
-> _Add screenshots of your Home page, Recipe Details page, and Add/Edit form here._
-
----
-
 ## ✨ Features
 
 - 📋 **Browse Recipes** — View all baking recipes in a responsive card grid
