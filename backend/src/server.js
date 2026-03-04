@@ -12,11 +12,10 @@ dotenv.config()
 const app=express();
 const port=process.env.PORT || 3001
 
-app.use(cors(
-    {
-         origin: 'https://bakershub-frontend.onrender.com'
-    }
-))
+app.use(cors({
+  origin: ["https://bakershub-frontend.onrender.com", "http://localhost:5173"]
+}));
+
 app.use(express.json());
 app.use("/recipes", recipeRoutes)
 
