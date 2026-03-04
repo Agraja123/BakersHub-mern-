@@ -1,5 +1,5 @@
 import express from "express";
-import cors from "cors";
+// import cors from "cors";
 import dotenv from "dotenv";
 import {connectDB} from "./config/db.js";
 import recipeRoutes from "./routes/recipeRoutes.js";
@@ -12,11 +12,11 @@ dotenv.config()
 const app=express();
 const port=process.env.PORT || 3001
 
-app.use(cors(
-    {
-         origin: 'https://bakershub-frontend.onrender.com'
-    }
-))
+// app.use(cors(
+//     {
+//          origin: 'https://bakershub-frontend.onrender.com'
+//     }
+// ))
 app.use(express.json());
 app.use("/recipes", recipeRoutes)
 
