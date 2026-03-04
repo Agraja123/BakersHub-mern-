@@ -14,7 +14,7 @@ const port=process.env.PORT || 3001
 
 app.use(cors(
     {
-         origin: 'https://bakershub-frontend.onrender.com/'
+         origin: 'https://bakershub-frontend.onrender.com'
     }
 ))
 app.use(express.json());
